@@ -154,7 +154,7 @@ text.addEventListener('input', e => {
     // Clear text box when word matches
     e.target.value = '';
     correctWord();
-    time += 2;  //add 2 seconds
+    time += 3;  //add 3 seconds
     updateTime();
   }
 });
