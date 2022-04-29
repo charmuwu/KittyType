@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow: hidden;
+  }
+  
+  button {
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+    padding: 5px 15px;
+  }
+  
+  select {
+    width: 200px;
+    padding: 5px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 0;
+    background-color: #a7c5e3;
+  }
+  
+  select:focus,
+  button:focus {
+    outline: 0;
+  }
+  
+  .settings-btn {
+    z-index: 5;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+  }
+  
+  .settings {
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 70px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .settings.hide {
+    transform: translateY(-100%);
+  }
+  
+  .container {
+    position: absolute;
+    bottom: 0;
+    height: 250px;
+    width: 100%;
+    background-color: #a36ad8;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  .h2cont{
+    display: flex;
+    /* position: absolute; */
+    justify-content: center;
+  }
+  h2 {
+    
+    width: max-content;
+    background-color: rgba(8, 8, 8, 0.3);
+    padding: 8px;
+    padding-inline: 58px;
+    border-radius: 4px;
+    margin: 0 0 40px;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  input {
+    border: 0;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 300px;
+    padding: 12px 20px;
+    margin-top: 10px;
+    /* z-index: 100; */
+  }
+  
+  .score-container {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+  }
+  .gameContainer{
+    display: flex;
+    justify-content: flex-start;
+  }
+  #time-cont {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    font-size: 25px;
+  }
+  #kitty {
+    position: absolute;
+    top: -250px;
+    color: white;
+    width:200px;
+    height: 200px;
+    z-index: 5;
+  }
+  #umbrella{
+    top: -520px;
+    position: absolute;
+    color: white;
+    width:400px;
+    height:300px;
+  }
+
+  .end-game-container {
+    background-color: inherit;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
